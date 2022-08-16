@@ -59,7 +59,7 @@ router.route('/get-detailed-data-values').get(async(req, res)=>{
   res.send(dataValues);
 })
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT|3000, ()=>{
   console.log('server started');
 });
 
